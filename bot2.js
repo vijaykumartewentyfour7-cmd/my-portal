@@ -1,4 +1,4 @@
-const TOKEN = '8938614460:AAFq0PLCFH1V7mgb17f-OkubD8TjdHF-My0';
+const TOKEN = process.env.BOT2_TOKEN;
 const BASE_URL = `https://api.telegram.org/bot${TOKEN}`;
 
 async function sendMessage(chatId, text) {

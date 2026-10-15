@@ -4,8 +4,8 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-const BOT1_TOKEN = '8801973647:AAF5z6qVSj3uV_EoFcL6VDXHINGWkPLMeaok';
-const BOT2_TOKEN = '8938614460:AAFq0PLCFH1V7mgb17f-OkubD8TjdHF-My0';
+const BOT1_TOKEN = process.env.BOT1_TOKEN;
+const BOT2_TOKEN = process.env.BOT2_TOKEN;
 const MY_CHAT_ID = '6114302223'; // Yahan apni Telegram Chat ID likhein
 async function sendTelegramMessage(token, text) {
   try {

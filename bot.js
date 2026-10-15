@@ -1,4 +1,4 @@
-const token = '8801973647:AAF5z6qVSj3uV_EoFcL6VDXHINGWkPLMeaok';
+const token = process.env.BOT1_TOKEN;
 let offset = 0;
 
 async function sendMessage(chatId, text) {
